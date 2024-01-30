@@ -1,8 +1,8 @@
-
 import { useState, useCallback, useEffect, useRef } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
 
 function App() {
   const [length, setLength] = useState(8)
@@ -63,7 +63,7 @@ function App() {
           <input 
           type="range" 
           min={6}
-          max={12}
+          max={100}
           value={length}
           className='cursor-pointer'
           onChange={(e) => setLength(e.target.value)}
