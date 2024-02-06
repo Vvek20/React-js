@@ -11,3 +11,8 @@ const UserContextProvider = ({children}) => {
 }
 
 export default UserContextProvider
+
+import React  from "react";
+import UserContext from "./UserContext";
+
+const UserContextProvider=({children})
