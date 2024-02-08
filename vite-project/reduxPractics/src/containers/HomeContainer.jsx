@@ -1,2 +1,3 @@
 import Home from "../components/Home";
-export default Home
+import Card from "../components/Card";
+export default Homecontainer
