@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 }
+.app{
+  font-weight: bolder;
+}
+.todo{
+  font-weight: bolder;
+    text-align: left;
+}
