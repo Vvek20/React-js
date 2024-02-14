@@ -7,9 +7,9 @@ const Hero = () => {
       <div className='hero-left'>
         <h2>NEEW ARRIVALS ONLY</h2>
         <div>
-          <div className='hero-rignt'>
+          <div className='hero-hand-icon'>
             <p>new</p>
-            <img src="" alt='' />
+            <img src="https://unsplash.com/photos/woman-in-black-hijab-and-black-abaya-2eC_-0yRrGU" alt='hero' />
           </div>
           <p>collection</p>
           <p>For everyone</p>
