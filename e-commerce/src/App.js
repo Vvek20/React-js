@@ -6,6 +6,7 @@ import ShopCategory from './Context/Pages/ShopCategory';
 import Product from './Context/Pages/Product';
 import Cart from './Context/Pages/Cart';
 import LoginSignup from './Context/Pages/LoginSignup';
+import Shop from './Context/Pages/Shop';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}>
-        <Route path='/mens' element={<ShopCategory category="men"/>}/>
+        <Route path='/mens' element={<ShopCategory category="Men"/>}/>
         <Route path='/womens' element={<ShopCategory category="women"/>}/>
         <Route path='/kids' element={<ShopCategory category="kid"/>}/>
         <Route path ='/product' element={<Product/>}/>
