@@ -1,0 +1,256 @@
+:root {
+  --bg: #f4f5f7;
+  --card: #ffffff;
+  --text: #1e2430;
+  --muted: #697386;
+  --primary: #f4511e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 2.6rem 0;
+}
+
+.hero {
+  min-height: 86vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image:
+    linear-gradient(100deg, rgba(3, 15, 38, 0.58), rgba(10, 45, 26, 0.36)),
+    url("https://images.unsplash.com/photo-1477587458883-47145ed94245?auto=format&fit=crop&w=1800&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 30% 20%, rgba(255, 165, 0, 0.23), transparent 45%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(760px, 90vw);
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.2em;
+  font-size: 0.74rem;
+}
+
+.hero h1 {
+  font-size: clamp(2.5rem, 8vw, 5.4rem);
+  margin: 1rem 0 0.4rem;
+}
+
+.hero h1 span {
+  font-style: italic;
+  font-weight: 500;
+  display: block;
+}
+
+.sub {
+  color: #ecf0f1;
+  font-size: 1.08rem;
+}
+
+.cta-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.ghost {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.quick-nav-wrap {
+  position: relative;
+  padding: 3.5rem 0 2rem;
+}
+
+.quick-nav {
+  display: grid;
+  gap: 0.75rem;
+  width: min(500px, 100%);
+}
+
+.quick-item {
+  display: flex;
+  gap: 1rem;
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.quick-item span {
+  color: #1f2c42;
+  font-weight: 500;
+  min-width: 2.8rem;
+}
+
+.watermark {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(2.5rem, 11vw, 10rem);
+  color: rgba(244, 81, 30, 0.08);
+  font-weight: 700;
+  pointer-events: none;
+}
+
+.section-title-wrap h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.section-title-wrap p {
+  margin-top: 0.4rem;
+  color: var(--muted);
+}
+
+.stats-grid,
+.place-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.2rem;
+}
+
+.stat-card,
+.place-card {
+  background: var(--card);
+  border-radius: 20px;
+  padding: 1.2rem;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+}
+
+.icon-box {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: #eef5ff;
+  display: grid;
+  place-items: center;
+  font-size: 1.8rem;
+}
+
+.stat-card h3 {
+  margin: 0.8rem 0 0;
+  font-size: 2.2rem;
+  color: #1594e8;
+}
+
+.muted {
+  color: var(--muted);
+  letter-spacing: 0.12em;
+  font-size: 0.9rem;
+}
+
+.stat-card h4 {
+  font-size: 1.35rem;
+  margin: 0.2rem 0;
+}
+
+.updated {
+  color: #639dff;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.image-wrap {
+  position: relative;
+  width: 100%;
+  height: 210px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.place-body h3 {
+  margin-bottom: 0;
+  font-size: 1.7rem;
+}
+
+.location {
+  margin-top: 0.3rem;
+  color: #1594e8;
+  font-weight: 600;
+}
+
+.discover-link {
+  display: inline-block;
+  margin-top: 1rem;
+  letter-spacing: 0.14em;
+  font-weight: 700;
+}
+
+.category-page {
+  padding: 2rem 0 4rem;
+}
+
+.category-header h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.back-link {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .watermark {
+    display: none;
+  }
+
+  .quick-item {
+    font-size: 1.1rem;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
